@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="RestApi.Item2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RestApi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <navigation:SfTabControl Margin="10,10,0,0">
+
+            <navigation:SfTabItem Header="Tab1" Content="Tab1 Content" IsSelected="True"/>
+
+            <navigation:SfTabItem Header="Tab2" Content="Tab2 Content"/>
+
+            <navigation:SfTabItem Header="Tab3" Content="Tab3 Content"/>
+
+        </navigation:SfTabControl>
+    </Grid>
+</Page>
