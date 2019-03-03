@@ -13,7 +13,9 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
+using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -32,6 +34,13 @@ namespace RestApi
         public Item1()
         {
             this.InitializeComponent();
+        }
+
+        private void btn_CallRestEndPoint_Click(object sender, RoutedEventArgs e)
+        {
+            var messageDialog = new MessageDialog("Btn Clicked");
+            messageDialog.ShowAsync();
+
         }
     }
 }
